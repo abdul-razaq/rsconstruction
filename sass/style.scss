@@ -1,0 +1,142 @@
+@import 'variables';
+@import 'utilities';
+@import 'layouts';
+
+// General Resets and Stylings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  // scroll-behavior: smooth;
+}
+
+body {
+  color: $text-color;
+  background-color: $background-color;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.7;
+  font-size: 2rem;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.5)
+    ),
+    url('/css/img/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: auto;
+  color: #fff;
+
+  &__logo--icon {
+    color: $color-primary;
+    font-size: 4rem;
+  }
+
+  .logo-style {
+    color: $color-primary;
+  }
+
+  h1 {
+    margin-top: 4rem;
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    li a {
+      padding-left: 4rem;
+      color: #fff;
+      text-transform: uppercase;
+      transition: all 0.4s;
+
+      &:hover,
+      &:active {
+        color: $color-primary;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &-lead {
+    font-size: 5rem;
+    font-weight: 200;
+    letter-spacing: 0.3rem;
+    color: #f8f8f8;
+
+    & > span {
+      display: block;
+    }
+  }
+}
+
+.card-sectors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 6rem;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+
+// Section Goodat
+.section-goodat {
+  text-align: center;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    grid-gap: 8rem;
+  }
+
+  &__heading {
+    color: $color-secondary;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    font-size: 8rem;
+    color: $color-primary;
+  }
+}
+
+// Section clients
+.section-clients__text {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+@import 'media';

@@ -1,0 +1,98 @@
+// Margins
+.margin-y-big {margin: 8rem 0;}
+.margin-y-medium {margin: 4rem 0;}
+.margin-y-small {margin: 2rem 0;}
+
+.margin-x-big {margin: 0 8rem;}
+.margin-x-medium {margin: 0 4rem;}
+.margin-x-small {margin: 0 2rem;}
+
+// Padding
+.padding-y-big {padding: 8rem 0;}
+.padding-y-medium {padding: 4rem 0;}
+.padding-y-small {padding: 2rem 0;}
+
+.padding-x-big {padding: 0 8rem;}
+.padding-x-medium {padding: 0 4rem;}
+.padding-x-small {padding: 0 2rem;}
+
+// To define text-primary, text-secondary classes
+.text-primary {
+  text-align: center;
+  font-weight: 300;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+// Buttons
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  padding: .8rem 2rem;
+  color: #000;
+  cursor: pointer;
+  border-radius: .3rem;
+
+  &-blk {
+    margin-top: -4rem;
+  }
+
+  &__primary {
+    background-color: $color-primary;
+    color: #fff;
+    transition: all .3s;
+    margin-right: 2rem;
+    border: 1px solid $color-primary;
+
+    &:hover,
+    &:active {
+      background-color: $color-secondary;
+    }
+  }
+
+  &__outline {
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    color: #fff;
+    transition: all .3s;
+
+    &:hover {
+      background-color: #cf6d17;
+    }
+  }
+}
+
+// Cards
+.card {
+  background-color: #f0f0f0;
+  transition: all .8s;
+  box-shadow: 0 .5rem 2rem rgba($color-black, .4);
+  border-radius: 1rem;
+  overflow: hidden;
+
+  &__img {
+    height: 25rem;
+    width: 100%;
+  }
+
+  &__heading {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 200;
+    color: $color-primary;
+  }
+
+  &__text {
+    // text-align: center;
+    font-size: 1.8rem;
+    margin: 2rem 6rem;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  &:hover {
+    transform: translateY(-4rem) scale(1.05);
+  }
+
+}
+

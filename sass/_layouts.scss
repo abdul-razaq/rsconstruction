@@ -1,0 +1,262 @@
+.section-sectors {
+  padding-top: 8rem;
+  margin-top: -8rem;
+  background-color: $color-dark;
+}
+
+.section-clients {
+  background-color: $color-dark;
+}
+
+.section-whoarewe {
+  background-image: linear-gradient(
+      to right,
+      rgba($color-black, 0.4),
+      rgba($color-black, 0.4)
+    ),
+    url('../css/img/whoarewe.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -8rem;
+  color: #fff;
+
+  &__heading {
+    font-size: 4rem;
+    color: $color-primary;
+    padding-top: 4rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--flex {
+    display: flex;
+    flex-direction: row;
+
+    i {
+      font-size: 8rem;
+      font-weight: bold;
+      color: $color-dark;
+      padding-right: 2rem;
+    }
+  }
+}
+
+// Section testimonials
+.section-testimonials {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 8rem;
+    grid-gap: 8rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    background-color: #e7e7e7;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 0.4rem 0.8rem rgba($color-black, 0.4);
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      transform: translateY(-4rem) scale(1.15);
+      box-shadow: 0 0.8rem 1rem rgba($color-black, 0.4);
+    }
+  }
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    font-size: 1.6rem;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+
+// Section Featured Projects
+.section-projects {
+  background-color: $color-dark;
+  padding-bottom: 2rem;
+
+  h3 {
+    padding-top: 8rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__box {
+    background-color: #f7f7f7;
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      z-index: 1;
+      transform: scale(1.4);
+    }
+
+    &--img {
+      height: 25rem;
+      overflow: hidden;
+      padding: 1.5rem;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &--description {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-style: italic;
+    }
+  }
+}
+
+// Section about
+.section-about {
+  &__flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10rem;
+  }
+
+  &__img {
+    height: 40rem;
+    border-radius: 1rem;
+    margin-top: 5rem;
+  }
+
+  &__content--heading {
+    color: $color-primary;
+    font-size: 3rem;
+    padding-left: 10rem;
+  }
+
+  &__content--text {
+    padding-left: 10rem;
+  }
+}
+
+.section-customer {
+  background: $color-dark;
+  padding: 6rem;
+
+  &__lead {
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 100;
+    color: #797979;
+  }
+
+  h3 {
+    color: #808080;
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 100;
+    margin-top: -4rem;
+  }
+
+  &__socials {
+    margin-top: 4rem;
+    text-align: center;
+
+    &--facebook {
+      color: #3b5998;
+      padding-left: 2rem;
+    }
+
+    &--email {
+      color: #dd4b39;
+      padding-left: 2rem;
+    }
+
+    &--phone {
+      padding-left: 2rem;
+    }
+  }
+}
+
+.footer {
+  background-color: #242424;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 5rem;
+  margin-top: -10rem;
+  p {
+    text-align: center;
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      margin-left: 25rem;
+      flex-direction: column;
+      li {
+        margin-bottom: 1rem;
+        transition: all 1s;
+        a {
+          transition: all .5s;
+          color: #c5c5c5;
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Carousel
+.section-carousel {
+  #container {
+    height: 50rem;
+    width: auto;
+  }
+
+  .container {
+    h3 {
+      margin-bottom: 2rem;
+      color: $color-secondary;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      text-align: center;
+
+      &:last-child {
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
